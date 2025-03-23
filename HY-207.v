@@ -230,6 +230,246 @@ assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
 assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
 assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
 
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
+assign w_led_data[1:0]   = {w_key_push[0],w_key_push[0]};
+assign w_led_data[9:8]   = {w_key_push[0],w_key_push[0]};
+
+assign w_led_data[3:2]   = {w_key_push[1],w_key_push[1]};
+assign w_led_data[11:10] = {w_key_push[1],w_key_push[1]};
+
+assign w_led_data[5:4]   = {w_key_push[2],w_key_push[2]};
+assign w_led_data[13:12] = {w_key_push[2],w_key_push[2]};
+
+assign w_led_data[7:6]   = 1'b0;//{w_key_push[2],w_key_push[2]};
+assign w_led_data[15:14] = 1'b0;//{w_key_push[2],w_key_push[2]};
+//-
+assign w_led_data[17:16] = {w_key_push[3],w_key_push[3]};
+assign w_led_data[25:24] = {w_key_push[3],w_key_push[3]};
+
+assign w_led_data[19:18] = {w_key_push[4],w_key_push[4]};
+assign w_led_data[27:26] = {w_key_push[4],w_key_push[4]};
+
+assign w_led_data[21:20] = {w_key_push[5],w_key_push[5]};
+assign w_led_data[29:28] = {w_key_push[5],w_key_push[5]};
+
+assign w_led_data[23:22] = 1'b0;//{w_key_push[5],w_key_push[5]};
+assign w_led_data[31:30] = 1'b0;//{w_key_push[5],w_key_push[5]};
+//-
+assign w_led_data[33:32] = {w_key_push[6],w_key_push[6]};
+assign w_led_data[41:40] = {w_key_push[6],w_key_push[6]};
+
+assign w_led_data[35:34] = {w_key_push[7],w_key_push[7]};
+assign w_led_data[43:42] = {w_key_push[7],w_key_push[7]};
+
 assign w_led_data[37:36] = {w_key_push[8],w_key_push[8]};
 assign w_led_data[45:44] = {w_key_push[8],w_key_push[8]};
 
