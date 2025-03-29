@@ -47,6 +47,7 @@ colorLED_glow_inst
     .o_colLed   (o_sensor_LED),
     .aresetn         (aresetn)
 );
+
 endmodule
 
 
