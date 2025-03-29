@@ -9,7 +9,7 @@ module Cyclic_button_senser
     localparam [2:0] STATE_1 = 3'b101;
     localparam [2:0] STATE_2 = 3'b011;
    
-    always @(posedge clk) begin //тут можно попробовать добавить задержку с #?
+    always @(posedge clk) begin 
             case (o_sensor)
                 STATE_0: begin
                     o_sensor <= STATE_1;  // Отправляем 0 на первый вход
