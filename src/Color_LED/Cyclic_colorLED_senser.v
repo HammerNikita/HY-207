@@ -20,6 +20,9 @@ module Cyclic_colorLED_senser //уменьшить по примеру
                 STATE_2: begin
                     o_sensor_LED <= STATE_3;  // Отправляем 0 на третий вход
                 end
+                STATE_3: begin
+                    o_sensor_LED <= STATE_0;  // Отправляем 0 на третий вход
+                end
                 default: begin
                     o_sensor_LED <= STATE_0;  // Отправляем 0 на 4й вход
                 end

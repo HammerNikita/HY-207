@@ -72,7 +72,7 @@ Management_button_col
 Management_button_col_0_inst //хотим обьединить кнопки
 (
     .clk                   (aclk             ),
-    .aresetn               (1'b1             ),
+    .aresetn               (aresetn          ),
     .i_sync_n              (w_sensor[0]      ),
     .i_button_n            (w_manag_button   ),
     .o_btn_save            (w_btn_save_col_0),
@@ -83,7 +83,7 @@ Management_button_col
 Management_button_col_1_inst //хотим обьединить кнопки
 (
     .clk                   (aclk             ),
-    .aresetn               (1'b1             ),
+    .aresetn               (aresetn          ),
     .i_sync_n              (w_sensor[1]      ),
     .i_button_n            (w_manag_button   ),
     .o_btn_save            (w_btn_save_col_1),
@@ -94,7 +94,7 @@ Management_button_col
 Management_button_col_2_inst //хотим обьединить кнопки
 (
     .clk                   (aclk             ),
-    .aresetn               (1'b1             ),
+    .aresetn               (aresetn          ),
     .i_sync_n              (w_sensor[2]      ),
     .i_button_n            (w_manag_button   ),
     .o_btn_save            (w_btn_save_col_2),

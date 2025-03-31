@@ -19,6 +19,7 @@ module led_place_8x8_manager
     output wire O_LED_PLACE_ROW_7, // +
 
     input  wire [63:00] i_led_data,
+input wire aresetn,                            // ВПИСАТЬ СБРОС В КОД!!
 
     input  wire aclk   
 );

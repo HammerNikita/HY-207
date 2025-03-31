@@ -128,10 +128,12 @@ assign pin50 = 1'b1;
 //assign pin52 = 1'b1; 
 //assign pin53 = 1'b1; 
 assign pin58 = 1'b1; 
-assign pin66 = 1'b0; 
-assign pin67 = 1'b0;
-assign pin68 = 1'b0;
-assign pin69 = 1'b0;
+
+// assign pin66 = 1'b0; 
+// assign pin67 = 1'b0;
+// assign pin68 = 1'b0;
+// assign pin69 = 1'b0;
+
 //assign pin73 = 1'b1; 
 //assign pin74 = 1'b1; 
 //assign pin75 = 1'b1; 
@@ -164,6 +166,8 @@ assign pin8 = 1'bZ;
 assign pin37 = 1'bZ;
 assign pin63 = 1'bZ;
 
+//КОНЕЦ ПИНОВ
+
 wire [3:0] w_btn;
 
 assign w_btn[3] = pin54;
@@ -179,7 +183,7 @@ assign pin51 = w_sensor[0];
 assign pin52 = w_sensor[1];
 assign pin53 = w_sensor[2];
 
-button_plant_3x4_manager
+button_plant_3x4_manager// ПОДКЛЮЧЕНИЕ КНОПОК
 button_plant_3x4_manager_inst 
 (
     .O_BUTTON_COL_0 (w_sensor[0]),
@@ -194,8 +198,8 @@ button_plant_3x4_manager_inst
     .o_key_push (w_key_push),
     .o_key_save (w_key_save),
 
-    .aresetn       (1'b1),
-    .aclk          (clk )       
+    .aresetn       (reset),
+    .aclk          (clk)       
 );
 
 wire [63:00] w_led_data;
@@ -249,7 +253,7 @@ assign w_led_data[55:54] = 1'b0;//{w_key_push[11],w_key_push[11]};
 assign w_led_data[63:62] = 1'b0;//{w_key_push[11],w_key_push[11]};
 
 
-assign pin14 = ~w_key_push[0];
+assign pin14 = ~w_key_push[0];//назначение кнопок
 assign pin15 = ~w_key_push[1];
 assign pin16 = ~w_key_push[2];
 assign pin17 = ~w_key_push[3];
@@ -280,11 +284,42 @@ led_place_8x8_manager_inst
     .O_LED_PLACE_ROW_7(pin83),
 
     .i_led_data (w_led_data),
+    
+    .aresetn       (reset),
 
-    .aclk          (clk )   
+    .aclk          (clk)   
 );
 
+colorLED_manager
+colorLED_manager_inst  
+(
+    .O_LED_color_COL_0(pin70),
+    .O_LED_color_COL_1(pin71),
+    .O_LED_color_COL_2(pin72),
 
+    
+    .O_LED_color_ROW_0(w_sensor_LedCol[0]),
+    .O_LED_color_ROW_1(w_sensor_LedCol[1]),
+    .O_LED_color_ROW_2(w_sensor_LedCol[2]),
+    .O_LED_color_ROW_3(w_sensor_LedCol[3]),
+
+
+    .i_Led_color_data (w_key_save),
+
+    .aclk          (clk),
+    .aresetn       (reset)
+
+);
+
+wire [3:0] w_sensor_LedCol;//провод соединения опросника и LedColor
+
+wire reset;
+assign pin62 = reset;
+
+assign pin69 = w_sensor_LedCol[0];
+assign pin68 = w_sensor_LedCol[1];
+assign pin67 = w_sensor_LedCol[2];
+assign pin66 = w_sensor_LedCol[3];
 
 
 endmodule

@@ -53,6 +53,12 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin51
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin52
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin53
+set_global_assignment -name VERILOG_FILE src/Color_LED/Cyclic_colorLED_senser.v
+set_global_assignment -name VERILOG_FILE src/Color_LED/colorLED_manager.v
+set_global_assignment -name VERILOG_FILE src/Color_LED/colorLED_glow.v
 set_global_assignment -name VERILOG_FILE src/button_plant_3x4/Management_button_col.v
 set_global_assignment -name VERILOG_FILE src/led_place_8x8/led_place_8x8_manager.v
 set_global_assignment -name VERILOG_FILE src/led_place_8x8/led_place_8x8_led_ctrl.v
@@ -62,6 +68,3 @@ set_global_assignment -name VERILOG_FILE src/button_plant_3x4/button_plant_3x4_m
 set_global_assignment -name VERILOG_FILE src/button_plant_3x4/button_filtre.v
 set_global_assignment -name VERILOG_FILE "HY-207.v"
 set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin51
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin52
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to pin53
