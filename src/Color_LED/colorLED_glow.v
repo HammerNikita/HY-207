@@ -6,9 +6,9 @@ module colorLED_glow  //отделить в отдельный файл
     input  wire aresetn            //для рега
 );
 
-reg r_reg;// 0 - вкл, 1 -lamp выкл
+reg r_led;// 0 - вкл, 1 -lamp выкл
 initial begin
-	r_leg = 1'b1;    //чтоб не горела
+	r_led = 1'b1;    //чтоб не горела
 end
 assign	o_colLed = r_led; // присвоение выходу рега
 always @(negedge i_enable_colorled, negedge aresetn) begin// по спаду смена состояния

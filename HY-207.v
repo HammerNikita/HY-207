@@ -199,7 +199,7 @@ button_plant_3x4_manager_inst
     .o_key_save (w_key_save),
 
     .aresetn       (reset),
-    .aclk          (clk)       
+    .aclk          (1'b1)       
 );
 
 wire [63:00] w_led_data;
@@ -285,7 +285,7 @@ led_place_8x8_manager_inst
 
     .i_led_data (w_led_data),
     
-    .aresetn       (reset),
+    .aresetn       (1'b1),
 
     .aclk          (clk)   
 );
@@ -306,15 +306,15 @@ colorLED_manager_inst
 
     .i_Led_color_data (w_key_save),
 
-    .aclk          (clk),
+    .aclk          (1'b1),
     .aresetn       (reset)
 
 );
 
 wire [3:0] w_sensor_LedCol;//провод соединения опросника и LedColor
 
-wire reset;
-assign pin62 = reset;
+//wire reset;
+// assign pin62 = reset;    СДЕЛАТЬ НОРМАЛЬНУЮ КНОПКУ (на прямую не работает)
 
 assign pin69 = w_sensor_LedCol[0];
 assign pin68 = w_sensor_LedCol[1];
